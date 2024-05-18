@@ -1,45 +1,59 @@
 # Post
   # Zoo
-    https://.pythonanywhere.com/estudiantes
-    Parámetros: JSON {nombre, apellido}
+    http://victor1403.pythonanywhere.com/zoo
+    Parámetros: JSON {"nombre": valor, "direccion": valor}
   # Habitat
-    https://argenisrrazaga.pythonanywhere.com/cursos
-    Parámetros: JSON {nombre}
+    http://victor1403.pythonanywhere.com/habitat
+    Parámetros: JSON {"nombre": valor, "tamano": valor, "clima": valor}
   # Empleado
-    https://argenisrrazaga.pythonanywhere.com/asistencias
-    Parametros: JSON {estudiante_id, curso_id, asistio(1 o 0)}
+    http://victor1403.pythonanywhere.com/empleado
+    Parametros: JSON {"nombre": valor, "apellido": valor, "posicion": valor, "anos_experiencia": valor, "zoo_id": valor}
   # Visitante
-    https://argenisrrazaga.pythonanywhere.com/asistencias
-    Parametros: JSON {estudiante_id, curso_id, asistio(1 o 0)}
+    http://victor1403.pythonanywhere.com/visitante
+    Parametros: JSON {"nombre": valor, "apellido": valor, "cedula": valor, "zoo_id": valor}
   # Animal
-    https://argenisrrazaga.pythonanywhere.com/asistencias
-    Parametros: JSON {estudiante_id, curso_id, asistio(1 o 0)}
+    http://victor1403.pythonanywhere.com/animal
+    Parametros: JSON {"nombre": valor, "edad": valor, "especie": valor, "zoo_id": valor, "habitat_id": valor}
 # Get
-  # Estudiantes
-    https://argenisrrazaga.pythonanywhere.com/estudiantes
-    o https://argenisrrazaga.pythonanywhere.com/estudiantes/{{id_estudiante}}
-  # Cursos
-    https://argenisrrazaga.pythonanywhere.com/cursos
-    o https://argenisrrazaga.pythonanywhere.com/{{id_curso}}
-  # Asistencias
-    https://argenisrrazaga.pythonanywhere.com/asistencias
-    o https://argenisrrazaga.pythonanywhere.com/asistencias/{{id_asistencias}}
+  # Zoo
+    http://victor1403.pythonanywhere.com/zoo
+  # Habitat
+    http://victor1403.pythonanywhere.com/habitat
+  # Empleado
+    http://victor1403.pythonanywhere.com/empleado
+  # Visitante
+    http://victor1403.pythonanywhere.com/visitante
+  # Animal
+    http://victor1403.pythonanywhere.com/animal
     
 # Put
-  # Estudiantes
-    https://argenisrrazaga.pythonanywhere.com/estudiantes/{{id_estudiante}}
-    Parámetros: JSON {nombre, apellido}
-  # Cursos
-    https://argenisrrazaga.pythonanywhere.com/cursos/{{id_curso}}
-    Parámetros: JSON {nombre}
-  # Asistencias
-    https://argenisrrazaga.pythonanywhere.com/asistencias/{{id_asistencia}}
-    Parámetros: JSON {estudiante_id, curso_id, asistio}
 
+  # Zoo
+    http://victor1403.pythonanywhere.com/zoo/{{zoo_id}}
+    Parámetros: JSON {"nombre": valor, "direccion": valor}
+  # Habitat
+    http://victor1403.pythonanywhere.com/habitat/{{habitat_id}}
+    Parámetros: JSON {"nombre": valor, "tamano": valor, "clima": valor}
+  # Empleado
+    http://victor1403.pythonanywhere.com/empleado/{{empleado_id}}
+    Parametros: JSON {"nombre": valor, "apellido": valor, "posicion": valor, "anos_experiencia": valor, "zoo_id": valor}
+  # Visitante
+    http://victor1403.pythonanywhere.com/visitante/{{visitante_id}}
+    Parametros: JSON {"nombre": valor, "apellido": valor, "cedula": valor, "zoo_id": valor}
+  # Animal
+    http://victor1403.pythonanywhere.com/animal/{{animal_id}}
+    Parametros: JSON {"nombre": valor, "edad": valor, "especie": valor, "zoo_id": valor, "habitat_id": valor}
+    
 # Delete
-  # Estudiantes
-    https://argenisrrazaga.pythonanywhere.com/estudiantes/{{id_estudiante}}
-  # Cursos
+  # Zoo
+    http://victor1403.pythonanywhere.com/zoo/{{zoo_id}}
+  # Habitat
     https://argenisrrazaga.pythonanywhere.com/cursos/{{id_curso}}
-  # Asistencias
-    https://argenisrrazaga.pythonanywhere.com/asistencias/{{id_asistencia}}
+  # Empleado
+  
+http://victor1403.pythonanywhere.com/empleado/{{empleado_id}}
+  # Visitante
+
+http://victor1403.pythonanywhere.com/visitante/{{visitante_id}}
+  # Animal
+http://victor1403.pythonanywhere.com/animal/{{animal_id}}
